@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Sumbi’s Cleaning · Raleigh &amp; the Triangle (concept preview)</title>
+<meta name="description" content="Concept preview website for Sumbi’s Cleaning, Raleigh NC. Not affiliated with or published by Sumbi’s Cleaning.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--lilac:#D9CCF2;--lilac2:#C7B4EC;--lilacd:#6B4FB3;--mint:#CDEFE0;--mintd:#1E7A55;--white:#fff;--bg:#F6F4FA;--ink:#1B1B2F;--mute:#5d5d73;--line:rgba(27,27,47,.08);--serif:"DM Serif Display",Georgia,serif;--sans:"Plus Jakarta Sans",system-ui,sans-serif;--r:28px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.6 var(--sans);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}a{color:inherit}
+.wrap{max-width:1280px;margin:0 auto;padding:0 24px}
+.concept{background:#FFE14D;color:#2b2400}
+.concept .wrap{display:flex;gap:12px;align-items:center;justify-content:center;padding-top:11px;padding-bottom:11px;font:600 14px/1.4 var(--sans);text-align:center}
+.concept b{background:#2b2400;color:#FFE14D;border-radius:999px;padding:5px 11px;font-size:11px;letter-spacing:.1em;text-transform:uppercase;flex:none}
+/* nav */
+.nav{position:sticky;top:12px;z-index:40;margin:14px auto 0}
+.nav .bar{display:flex;align-items:center;justify-content:space-between;background:rgba(255,255,255,.86);backdrop-filter:blur(14px);border:1px solid var(--line);border-radius:999px;padding:8px 8px 8px 22px;box-shadow:0 10px 30px -18px rgba(27,27,47,.35)}
+.brand{font:400 25px/1 var(--serif);text-decoration:none;display:flex;align-items:center;gap:10px}
+.brand i{width:12px;height:12px;border-radius:50%;background:linear-gradient(135deg,var(--lilac2),var(--mint));display:inline-block}
+.nav ul{display:flex;gap:6px;list-style:none;margin:0;padding:0}
+.nav ul a{display:block;text-decoration:none;font-weight:600;font-size:14.5px;padding:10px 14px;border-radius:999px;color:var(--mute)}
+.nav ul a:hover{background:var(--bg);color:var(--ink)}
+.pill{display:inline-flex;align-items:center;gap:10px;text-decoration:none;font:700 15px/1 var(--sans);padding:15px 22px;border-radius:999px;border:0;cursor:pointer;transition:transform .2s,box-shadow .2s}
+.pill.ink{background:var(--ink);color:#fff}.pill.ink:hover{transform:translateY(-2px);box-shadow:0 12px 24px -12px rgba(27,27,47,.6)}
+.pill.white{background:#fff;color:var(--ink)}.pill.white:hover{transform:translateY(-2px)}
+.pill .ar{width:26px;height:26px;border-radius:50%;background:var(--mint);color:var(--ink);display:grid;place-items:center;font-size:14px;margin-right:-8px}
+/* bento */
+.bento{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}
+.t{border-radius:var(--r);padding:30px;position:relative;overflow:hidden;background:#fff;border:1px solid var(--line)}
+.t.l{background:var(--lilac);border:0}.t.m{background:var(--mint);border:0}.t.k{background:var(--ink);color:#fff;border:0}
+.t.ph{padding:0;border:0}.t.ph img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}
+.lab{display:inline-flex;align-items:center;gap:8px;font:700 12px/1 var(--sans);letter-spacing:.08em;text-transform:uppercase;background:rgba(255,255,255,.65);padding:8px 12px;border-radius:999px}
+.t.k .lab{background:rgba(255,255,255,.12);color:#fff}
+.hero{padding:22px 0 0}
+.hero .bento{grid-auto-rows:minmax(118px,auto)}
+.h-main{grid-column:span 7;grid-row:span 4;padding:44px 44px 40px;display:flex;flex-direction:column;justify-content:space-between;background:var(--lilac);border:0}.h-main>*{position:relative;z-index:1}
+.h-main::after{content:"";position:absolute;right:-90px;top:-90px;width:300px;height:300px;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.6),rgba(255,255,255,0) 70%)}
+.h-main h1{font:400 clamp(46px,6vw,86px)/.98 var(--serif);letter-spacing:-.015em;margin:26px 0 20px;max-width:12ch}
+.h-main h1 em{font-style:italic;color:var(--lilacd)}
+.h-main p{font-size:18px;max-width:46ch;margin:0 0 28px;color:#34344c}
+.h-main .row{display:flex;gap:10px;flex-wrap:wrap}
+.h-photo{grid-column:span 5;grid-row:span 3}
+.h-photo .tagf{position:absolute;left:16px;bottom:16px;background:rgba(255,255,255,.9);border-radius:999px;padding:9px 14px;font-weight:600;font-size:13px;display:flex;gap:8px;align-items:center}
+.h-photo .tagf i{width:8px;height:8px;border-radius:50%;background:#2fbf71}
+.h-rate{grid-column:span 2;grid-row:span 1;display:flex;flex-direction:column;justify-content:center;padding:20px 22px}
+.h-rate b{font:400 40px/1 var(--serif)}.h-rate b span{color:#f2b01e;font-size:26px}
+.h-rate small{color:var(--mute);font-weight:600;font-size:13px}
+.h-fave{grid-column:span 3;grid-row:span 1;padding:20px 22px;display:flex;align-items:center;gap:16px}
+.h-fave b{font:400 48px/1 var(--serif)}
+.h-fave small{font-weight:600;font-size:13.5px;line-height:1.35;color:#1d4d39}
+.h-new{grid-column:span 5;grid-row:span 1;display:flex;flex-direction:column;justify-content:center;gap:4px;padding:24px 30px}
+.h-new h3{font:400 30px/1.08 var(--serif);margin:12px 0 0}
+.h-new h3 em{color:var(--mint);font-style:italic}
+.h-new .pill{align-self:flex-start;margin-top:14px;padding:12px 18px;font-size:14px}
+.h-quote{grid-column:span 7;grid-row:span 1;display:flex;align-items:center;gap:22px;padding:24px 30px}
+.h-quote .qm{font:400 80px/0.6 var(--serif);color:var(--lilac2);flex:none;padding-top:22px}
+.h-quote p{margin:0;font:500 17.5px/1.45 var(--sans)}
+.h-quote cite{display:block;margin-top:6px;font-style:normal;font-weight:700;font-size:13px;color:var(--mute)}
+.mark{background:linear-gradient(transparent 55%,var(--mint) 55%);padding:0 2px}
+/* sections */
+section{padding:96px 0 0}
+.shead{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:30px}
+.shead h2{font:400 clamp(36px,4.4vw,58px)/1.02 var(--serif);margin:12px 0 0;max-width:16ch}
+.shead h2 em{color:var(--lilacd)}
+.shead p{max-width:42ch;color:var(--mute);margin:0}
+.eyebrow{font:700 12px/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--lilacd)}
+.svc .t h3{font:700 21px/1.25 var(--sans);margin:14px 0 6px;letter-spacing:-.01em}
+.svc .t p{margin:0;color:var(--mute);font-size:15px}
+.ic{width:46px;height:46px;border-radius:14px;display:grid;place-items:center;background:var(--bg)}
+.t.l .ic,.t.m .ic{background:rgba(255,255,255,.7)}
+.ic svg{width:24px;height:24px;stroke:var(--ink);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.s-a{grid-column:span 4}.s-b{grid-column:span 4}.s-c{grid-column:span 4;grid-row:span 2;min-height:420px}
+.s-d{grid-column:span 3;min-height:250px}.s-e{grid-column:span 5}
+.s-f{grid-column:span 5}.s-g{grid-column:span 3;min-height:250px}.s-h{grid-column:span 4}
+.s-e h3,.s-h h3{font:400 30px/1.1 var(--serif)!important}
+.ph .cap{position:absolute;left:14px;bottom:14px;right:14px;color:#fff;font-weight:700;font-size:15px;text-shadow:0 1px 10px rgba(0,0,0,.5)}
+.ph::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(27,27,47,.55))}
+.ph .cap{z-index:1}
+/* how often */
+.often{grid-column:span 6;padding:40px;min-height:330px;display:flex;flex-direction:column}
+.often h3{font:400 44px/1 var(--serif);margin:18px 0 12px}
+.often p{margin:0 0 20px;font-size:16.5px;max-width:44ch;color:#34344c}
+.often ul{list-style:none;padding:0;margin:auto 0 0;display:grid;gap:10px}
+.often li{background:rgba(255,255,255,.7);border-radius:16px;padding:12px 16px;font-size:14.5px}
+.often li b{display:block;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--mute)}
+/* reviews */
+.rv-grid{columns:3;column-gap:16px}
+.rv-grid .t{break-inside:avoid;margin-bottom:16px;display:block}
+.stars{color:#f2b01e;letter-spacing:2px}
+.rv-grid p{margin:12px 0 16px;font-size:16px}
+.rv-grid .t.big p{font:400 26px/1.25 var(--serif)}
+.who{display:flex;align-items:center;gap:10px;font-weight:700;font-size:14px}
+.who i{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:var(--bg);font-style:normal;font-size:13px}
+.t.l .who i,.t.m .who i{background:rgba(255,255,255,.7)}
+.who small{display:block;font-weight:500;color:var(--mute);font-size:12.5px}
+.replyb{margin-top:16px;background:#fff;border-radius:18px;padding:14px 16px;font-size:14.5px}
+.replyb b{display:block;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--mintd);margin-bottom:4px}
+.fast{display:inline-flex;align-items:center;gap:6px;background:var(--ink);color:#fff;border-radius:999px;padding:6px 11px;font-size:12px;font-weight:700;margin-top:10px}
+/* faq + form */
+.ff{display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:start}
+.faq{display:grid;gap:10px}
+details{background:#fff;border:1px solid var(--line);border-radius:22px;padding:4px 22px}
+details[open]{background:var(--lilac);border-color:transparent}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:16px 0;font-weight:700;font-size:16.5px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";width:30px;height:30px;flex:none;border-radius:50%;background:var(--bg);display:grid;place-items:center;font-size:18px;transition:transform .2s}
+details[open] summary::after{transform:rotate(45deg);background:#fff}
+details p{margin:0 0 18px;color:#34344c}
+form{background:var(--ink);color:#fff;border-radius:var(--r);padding:36px}
+form h3{font:400 40px/1.05 var(--serif);margin:0 0 6px}
+form h3 em{color:var(--mint)}
+form .sub{color:#b9b9cf;margin:0 0 24px}
+.fg{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+form label{display:block;font-size:13px;font-weight:600;color:#cfcfe0;margin-bottom:12px}
+form input,form select,form textarea{display:block;width:100%;margin-top:6px;font:500 15.5px var(--sans);color:#fff;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:14px;padding:13px 14px}
+form input:focus,form select:focus,form textarea:focus{outline:2px solid var(--lilac2);border-color:transparent}
+form select option{color:#000}
+.seg{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:6px 0 14px}
+.seg label{margin:0;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:14px;padding:12px 14px;display:flex;gap:10px;align-items:center;color:#fff;cursor:pointer}
+.seg input{width:auto;margin:0;accent-color:var(--mint)}
+form textarea{min-height:90px;resize:vertical}
+form button{width:100%;justify-content:center;background:var(--mint);color:var(--ink);margin-top:6px}
+.demo{font-size:13px;color:#a3a3bb;text-align:center;margin:12px 0 0}
+.ok{display:none;margin-top:12px;background:var(--mint);color:var(--ink);border-radius:14px;padding:12px 14px;font-size:14px;text-align:center}
+/* footer */
+footer{padding:96px 0 30px}
+.fbento{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}
+.f1{grid-column:span 6}.f2{grid-column:span 3}.f3{grid-column:span 3}
+.f1 .brand{font-size:40px}
+.fbento p{color:var(--mute);margin:10px 0 0;font-size:14.5px}
+.fbento a{font-weight:600}
+.disc{grid-column:span 12;background:#FFE14D;color:#2b2400;border-radius:22px;padding:16px 22px;font-weight:600;font-size:14.5px}
+.credits{grid-column:span 12;font-size:12.5px;color:var(--mute);padding:0 6px}
+.mcta{display:none}
+@media (max-width:1060px){
+ .nav ul{display:none}
+ .h-main{grid-column:span 12;grid-row:auto}.h-photo{grid-column:span 7;grid-row:auto;min-height:300px}
+ .h-rate{grid-column:span 5;grid-row:auto}.h-fave{grid-column:span 6}.h-new{grid-column:span 6;grid-row:auto}.h-quote{grid-column:span 12}
+ .h-rate{grid-column:span 5}
+ .s-a,.s-b,.s-d,.s-e,.s-f,.s-g,.s-h{grid-column:span 6}.s-c{grid-column:span 12;grid-row:auto;min-height:300px}
+ .rv-grid{columns:2}.ff{grid-template-columns:1fr}
+}
+@media (max-width:680px){
+ .wrap{padding:0 14px}
+ .concept .wrap{flex-direction:column;gap:7px;font-size:13px}
+ .nav{top:8px}.nav .bar{padding:6px 6px 6px 16px}.brand{font-size:21px}.nav .pill{padding:12px 16px;font-size:14px}
+ .t{padding:24px;border-radius:24px}
+ .h-main{padding:30px 24px}.h-main h1{font-size:46px;margin:20px 0 14px}.h-main p{font-size:16.5px}
+ .h-photo{grid-column:span 12;min-height:240px}
+ .h-rate{grid-column:span 5;padding:18px}.h-rate b{font-size:32px}.h-fave{grid-column:span 7;padding:18px;gap:10px}.h-fave b{font-size:36px}.h-fave small{font-size:12.5px}
+ .h-new{grid-column:span 12}.h-new h3{font-size:30px}
+ .h-quote{flex-direction:column;align-items:flex-start;gap:4px}.h-quote .qm{padding-top:24px;font-size:64px}
+ .s-a,.s-b,.s-d,.s-e,.s-f,.s-g,.s-h,.s-c{grid-column:span 12}.s-d,.s-g{min-height:220px}
+ .often{grid-column:span 12;padding:28px}.often h3{font-size:36px}
+ .shead{flex-direction:column;align-items:flex-start;gap:12px}
+ section{padding-top:72px}
+ .rv-grid{columns:1}
+ form{padding:26px 20px}.fg{grid-template-columns:1fr;gap:0}
+ .f1,.f2,.f3{grid-column:span 12}
+ .mcta{display:flex;position:fixed;left:12px;right:12px;bottom:12px;z-index:60;gap:8px;opacity:0;pointer-events:none;transform:translateY(16px);transition:.3s}
+ .mcta.on{opacity:1;pointer-events:auto;transform:none}
+ .mcta a{flex:1;justify-content:center}
+ footer{padding-bottom:90px}
+}
+</style>
+</head>
+<body>
+<div class="concept" role="note"><div class="wrap"><b>Concept preview</b><span>Designed by Eustace Crentsil for Sumbi’s Cleaning. Not affiliated with or published by Sumbi’s Cleaning.</span></div></div>
+
+<div class="wrap nav"><div class="bar">
+ <a class="brand" href="#top"><i></i>Sumbi’s Cleaning</a>
+ <ul><li><a href="#services">Services</a></li><li><a href="#often">How often</a></li><li><a href="#reviews">Reviews</a></li><li><a href="#faq">FAQ</a></li></ul>
+ <a class="pill ink" href="#book">Free estimate <span class="ar">→</span></a>
+</div></div>
+
+<main id="top">
+<div class="hero"><div class="wrap"><div class="bento">
+ <div class="t h-main">
+  <div><span class="lab">📍 Raleigh &amp; the Triangle</span>
+  <h1>Small details are <em>big essentials.</em></h1>
+  <p>High-quality, reliable cleaning that leaves your space fresh and sanitary. Basic to deep cleaning, organizing and other housekeeping needs, for homes and offices.</p></div>
+  <div class="row"><a class="pill ink" href="#book">Book a free estimate <span class="ar">→</span></a><a class="pill white" href="tel:+19194401639">(919) 440-1639</a></div>
+ </div>
+ <div class="t ph h-photo"><img src="https://images.unsplash.com/photo-1556912173-3bb406ef7e77?w=1200&q=80&auto=format&fit=crop" alt="A bright, spotless white kitchen"><span class="tagf"><i></i>Customer satisfaction guaranteed</span></div>
+ <div class="t h-rate"><b>5.0 <span>★</span></b><small>on Google · 45 reviews</small></div>
+ <div class="t m h-fave"><b>157</b><small><strong style="font-size:15px;color:var(--ink)">Nextdoor faves</strong><br>Neighborhood Fave<br>2024 · 2025 · 2026</small></div>
+ <div class="t h-quote"><span class="qm">“</span><div><p>My house hasn’t looked this clean in a long time. This company is <span class="mark">responsive and very communicative</span> and delivered what they said they would.</p><cite>C.H., Raleigh · Nextdoor</cite></div></div>
+ <div class="t k h-new"><div><span class="lab">✦ Open for bookings</span><h3>Now accepting <em>new clients.</em></h3></div><a class="pill white" href="#book">Message for a free estimate <span class="ar">→</span></a></div>
+</div></div></div>
+
+<section id="services"><div class="wrap">
+ <div class="shead"><div><span class="eyebrow">What’s covered</span><h2>Every corner, <em>one tile at a time.</em></h2></div><p>From a basic clean to a top-to-bottom deep clean, Sumbi’s takes care of the details that make a home feel cared for.</p></div>
+ <div class="bento svc">
+  <div class="t s-a"><div class="ic"><svg viewBox="0 0 24 24"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg></div><h3>Basic cleaning</h3><p>Regular upkeep that leaves your space fresh and sanitary.</p></div>
+  <div class="t l s-b"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3l1.8 4.7L18.5 9l-4.7 1.8L12 15.5l-1.8-4.7L5.5 9l4.7-1.3z"/><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"/></svg></div><h3>Deep cleaning</h3><p>A thorough clean from top to bottom, every space and corner.</p></div>
+  <div class="t ph s-c"><img src="https://images.unsplash.com/photo-1758273238415-01ec03d9ef27?w=900&q=80&auto=format&fit=crop" alt="A woman mopping a bright living room floor"><span class="cap">Fresh, clean floors</span></div>
+  <div class="t ph s-d"><img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&q=80&auto=format&fit=crop" alt="A clean modern bathroom"><span class="cap">Bathrooms that shine</span></div>
+  <div class="t m s-e"><span class="lab">🛠 After the builders leave</span><h3>Post-renovation cleaning</h3><p>“The renovation may be finished, but the dust isn’t going anywhere on its own!” Let Sumbi’s take care of the final cleanup.</p></div>
+  <div class="t s-f"><div class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="7" rx="2"/><rect x="3" y="13" width="18" height="7" rx="2"/><path d="M10 7.5h4M10 16.5h4"/></svg></div><h3>Organizing &amp; housekeeping</h3><p>Organizing and other housekeeping needs, handled with the same care.</p></div>
+  <div class="t ph s-g"><img src="https://images.unsplash.com/photo-1574421233376-06f2ccf017f7?w=800&q=80&auto=format&fit=crop" alt="Folded towels beside potted plants"><span class="cap">Fresh &amp; tidy</span></div>
+  <div class="t k s-h"><span class="lab">🏡 + 🏢</span><h3 style="color:#fff">Homes &amp; offices</h3><p style="color:#c9c9dc">A signature service that defends your home and office against allergies and germs.</p></div>
+ </div>
+</div></section>
+
+<section id="often"><div class="wrap">
+ <div class="shead"><div><span class="eyebrow">How often</span><h2>Once, <em>or on repeat.</em></h2></div><p>Customers book a single deep clean, or keep Sumbi’s coming back. Here is what they say.</p></div>
+ <div class="bento">
+  <div class="t l often"><span class="lab">One-time</span><h3>The deep clean</h3><p>New to the area or just finished a renovation? One thorough visit, top to bottom.</p>
+   <ul><li><b>Gabrielle J. · Google</b>“We recently moved to the area… The team came over and did a deep clean of our house… the house is spotless.”</li><li><b>Countrypooh G. · Google</b>“Sumbi’s Cleaning did an amazing job deep cleaning our home.”</li></ul></div>
+  <div class="t m often"><span class="lab">Recurring</span><h3>The regular visit</h3><p>Keep the fresh feeling going. Customers mention monthly cleanings and a year or more of ongoing service.</p>
+   <ul><li><b>Angie G. · Google</b>“She is always punctual and thorough. I have been using her service for about a year…”</li><li><b>C.H. · Nextdoor</b>“I’m definitely going to be using them on a recurring basis.”</li></ul></div>
+ </div>
+</div></section>
+
+<section id="reviews"><div class="wrap">
+ <div class="shead"><div><span class="eyebrow">Reviews</span><h2>5.0 stars, <em>45 Google reviews.</em></h2></div><p>Quoted from Google and Nextdoor. Nextdoor names are shortened to initials.</p></div>
+ <div class="rv-grid">
+  <div class="t l big"><div class="stars">★★★★★</div><p>“My house hasn’t looked this clean in a long time. This company is responsive and very communicative and delivered what they said they would.”</p><div class="who"><i>CH</i><span>C.H.<small>Nextdoor · Raleigh, NC</small></span></div><div class="replyb"><b>Sumbi’s replied</b>“…We loved helping you get your home feeling fresh and clean! 😊 It means so much to us that you’re happy with our work.”</div><span class="fast">⚡ Replied within 7 hours</span></div>
+  <div class="t"><div class="stars">★★★★★</div><p>“Her responsibility and dedication show in every detail every space and corner is left spotless, with that fresh, clean scent that you can’t help but notice.”</p><div class="who"><i>MR</i><span>Marisabel Rodriguez<small>Google</small></span></div></div>
+  <div class="t m"><div class="stars">★★★★★</div><p>“Sumbi’s team is very professional and detailed oriented. They are the best we have in town.”</p><div class="who"><i>DJ</i><span>Danielly Jimenez<small>Google</small></span></div></div>
+  <div class="t"><div class="stars">★★★★★</div><p>“They paid close attention to detail and left our home fresh and clean from top to bottom. This team was friendly reliable, and professional.”</p><div class="who"><i>CG</i><span>Countrypooh Gomez<small>Google</small></span></div></div>
+  <div class="t"><div class="stars">★★★★★</div><p>“Sumbi’s cleaning is the best! She is so kind and my house is so clean after she comes.”</p><div class="who"><i>AG</i><span>Angie Gould<small>Google</small></span></div></div>
+  <div class="t l"><div class="stars">★★★★★</div><p>“…they are professional, reliable, and very attentive to every detail. ✨”</p><div class="who"><i>YO</i><span>Y.O.<small>Nextdoor</small></span></div></div>
+  <div class="t"><div class="stars">★★★★★</div><p>“They did a fantastic, highly thorough job and the house is spotless.”</p><div class="who"><i>GJ</i><span>Gabrielle Johnson<small>Google</small></span></div></div>
+ </div>
+</div></section>
+
+<section id="faq"><div class="wrap">
+ <div class="ff">
+  <div>
+   <div class="shead" style="margin-bottom:22px"><div><span class="eyebrow">FAQ</span><h2>Good to <em>know.</em></h2></div></div>
+   <div class="faq">
+    <details open><summary>Where does Sumbi’s Cleaning work?</summary><p>Raleigh and the Triangle area.</p></details>
+    <details><summary>Are estimates free?</summary><p>Yes. Message or call (919) 440-1639 for a free estimate.</p></details>
+    <details><summary>Are you taking new clients?</summary><p>Yes. Sumbi’s posted in October 2026 that it is now accepting new clients.</p></details>
+    <details><summary>Do you clean offices as well as homes?</summary><p>Yes. The service is designed for both homes and offices.</p></details>
+    <details><summary>What kinds of cleaning do you offer?</summary><p>Basic and deep cleaning, organizing and other housekeeping needs, plus post-renovation cleanups.</p></details>
+    <details><summary>What if I’m not happy?</summary><p>Customer satisfaction is guaranteed. The cleaning procedure is designed to meet your highest standards.</p></details>
+   </div>
+  </div>
+  <form id="book" novalidate>
+   <span class="eyebrow" style="color:var(--mint)">Book a clean</span>
+   <h3>Get your free <em>estimate.</em></h3>
+   <p class="sub">Tell us about your space and we’ll be in touch.</p>
+   <div class="fg"><label>Name<input type="text" autocomplete="name"></label><label>Phone<input type="tel" autocomplete="tel"></label></div>
+   <div class="fg"><label>Email<input type="email" autocomplete="email"></label><label>Type of clean<select><option>Basic cleaning</option><option>Deep cleaning</option><option>Organizing</option><option>Post-renovation</option><option>Office</option></select></label></div>
+   <label style="margin-bottom:0">How often?</label>
+   <div class="seg"><label><input type="radio" name="o" checked>One-time</label><label><input type="radio" name="o">Recurring</label></div>
+   <label>Anything we should know?<textarea placeholder="Rooms, pets, timing…"></textarea></label>
+   <button class="pill" type="submit">Request estimate <span class="ar" style="background:#fff">→</span></button>
+   <p class="demo">Demo form only. Nothing is sent. Call (919) 440-1639 to book.</p>
+   <div class="ok" id="ok">Thanks! This is a concept preview, so nothing was sent. Please call (919) 440-1639 or email Sumbi.cleaning.llc@gmail.com.</div>
+  </form>
+ </div>
+</div></section>
+</main>
+
+<footer><div class="wrap"><div class="fbento">
+ <div class="t f1"><a class="brand" href="#top"><i></i>Sumbi’s Cleaning</a><p>High-quality, reliable cleaning for homes and offices in Raleigh and the Triangle area.</p></div>
+ <div class="t l f2"><span class="eyebrow" style="color:var(--ink)">Contact</span><p style="color:var(--ink)"><a href="tel:+19194401639">(919) 440-1639</a><br><a href="mailto:Sumbi.cleaning.llc@gmail.com">Sumbi.cleaning.llc@gmail.com</a></p></div>
+ <div class="t m f3"><span class="eyebrow" style="color:var(--ink)">Sources</span><p style="color:var(--ink)">Details from Sumbi’s public Nextdoor page and Google Business listing, October 2026.</p></div>
+ <div class="disc">Concept preview designed by Eustace Crentsil for Sumbi’s Cleaning. Not affiliated with or published by Sumbi’s Cleaning. The form is a demo and sends nothing.</div>
+ <p class="credits">Stock photos for illustration only, not Sumbi’s work. From Unsplash: <a href="https://unsplash.com/photos/kitchen-with-white-cabinets-and-tiles-z3QZ6gjGRt4">roam in color</a>, <a href="https://unsplash.com/photos/a-woman-mops-a-bright-modern-living-room-floor-2NcTLdFHpH8">Vitaly Gariev</a>, <a href="https://unsplash.com/photos/modern-bathroom-with-shower-and-vanity-g51F6-WYzyU">Lotus Design N Print</a>, <a href="https://unsplash.com/photos/folded-towels-near-potted-plants-BB3dR-N5Npg">Sven Mieke</a>.</p>
+</div></div></footer>
+<div class="mcta"><a class="pill ink" href="tel:+19194401639">Call</a><a class="pill ink" style="background:var(--lilacd)" href="#book">Free estimate</a></div>
+<script>document.getElementById('book').addEventListener('submit',function(e){e.preventDefault();document.getElementById('ok').style.display='block';});
+window.addEventListener('scroll',function(){document.querySelector('.mcta').classList.toggle('on',scrollY>700)});</script>
+</body>
+</html>
